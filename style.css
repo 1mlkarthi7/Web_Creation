@@ -1,0 +1,86 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+  }
+  
+  .profile-info {
+    max-width: 60%;
+  }
+  .profile-pic {
+    margin-left: 20px;
+  }
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Light mode */
+  :root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #dddddd;
+    --link-color: #007bff;
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    --background-color: #222222;
+    --text-color: #f4f4f4;
+    --border-color: #444444;
+    --link-color: #1e90ff;
+  }
+  
+  .toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: blue;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
